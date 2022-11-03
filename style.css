@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poor Story', cursive;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #f799f1;
+}
+
+#main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 20px;
+
+    position: relative;
+}
+
+#video-container {
+    background-image: url("cover.png");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0,0, 0, 0.7);
+}
+
+#content {
+    z-index: 1;
+    color: white;
+    text-align: center;
+    
+}
+
+#click {
+    display: inline-block;
+    margin-top: 25px;
+    border: 2px dashed white;
+    padding: 10px 30px;
+    background-color: #f799f1;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+#click:hover {
+    transform: scale(0.95);
+}
+
+#about {
+    padding: 50px;
+    text-align: center;
+}
+
+#about p {
+   font-size: 20px;
+   max-width: 500px;
+   margin: auto;
+}
+
+#about h2 {
+    margin: 40px;
+    color: #f799f1;
+}
+
+#about i {
+    font-size: 48px;
+    margin: 0 5px;
+}
